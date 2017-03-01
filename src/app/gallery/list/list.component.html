@@ -1,0 +1,13 @@
+<div class="wrapper-list">
+  <div class="wrapper-card" *ngFor="let item of list">  
+    <md-card>
+      <a [routerLink]="[item.id]">
+        <img md-card-image src="{{ item.img }}">
+        <md-card-title>{{ item.title }}</md-card-title>
+      </a>
+      <md-card-subtitle>{{ item.photos.length }} фото</md-card-subtitle>
+    </md-card>
+  </div>
+
+</div>
+

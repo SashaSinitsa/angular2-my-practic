@@ -1,0 +1,22 @@
+md-card a {
+  color: black;
+}
+
+md-card a:hover {
+  color: #1e90ff;
+}
+
+.wrapper-list {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 25px 40px 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /*margin-bottom: 40px;*/
+}
+
+.wrapper-card {
+  width: 250px;
+  margin: 20px;
+}

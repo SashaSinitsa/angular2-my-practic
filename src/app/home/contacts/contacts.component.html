@@ -1,0 +1,61 @@
+<section>
+  <header>
+    <h1>contacts</h1>
+  </header>
+  <div class="container">
+    <div class="contacts">
+      <div class="contacts-block">
+        <div class="personal-block">
+          <h3>E-MAIL:</h3>
+          <p>t0996602789@gmail.com</p>
+        </div>
+        <div class="personal-block">
+          <h3>SKIPE:</h3>
+          <p>mywebsite.com</p>
+        </div>
+        <div class="personal-block">
+          <h3>TEL:</h3>
+          <p>+38(099)6602789</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="contacts">
+      <div class="personal-block">
+        <h1>хотите обсудить ваши идеи?</h1>
+      </div>
+      <div class="form-wrap contacts-block">
+        <div class="wrap personal-block">
+          <span class="your-name">
+            <input type="text" class="name" name="your-name" placeholder="ИМЯ: *">
+        </span>
+        </div>
+        <div class="wrap personal-block">
+          <span class="e-mail">
+            <input type="text" class="mail" name="e-mail" placeholder="E-MAIL: *">
+        </span>
+        </div>
+      </div>
+      <div class="text personal-block">
+        <span class="message">
+          <textarea name="message" class="textarea" cols="60" rows="3" placeholder=""></textarea>
+        </span>
+      </div>
+      <div class="submit personal-block">
+        <button id="button" class="btn btn-default btn-big">отправить</button>
+      </div>
+    </div>
+  </div>
+
+<sebm-google-map 
+  [latitude]="lat" 
+  [longitude]="lng"
+  [zoom]="zoom"
+  [scrollwheel]="scrollwheel" 
+ >
+  <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+</sebm-google-map>
+
+  <!--<div id="map"></div>-->
+</section>

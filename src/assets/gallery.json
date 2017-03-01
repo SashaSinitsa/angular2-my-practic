@@ -1,0 +1,74 @@
+[{
+    "id": "0",
+    "title": "BMV",
+    "img": "/assets/img/1.jpg",
+    "photos": [
+      "/assets/img/3.jpg",
+      "/assets/img/2.jpg",
+      "/assets/img/3.jpg"
+    ],
+    "text": "Автомобили немецкого производства – частые гости в нашей студии." 
+  },
+  {
+    "id": "1",
+    "title": "BMV",
+    "img": "/assets/img/2.jpg",
+    "photos": [
+      "/assets/img/1.jpg",
+      "/assets/img/2.jpg",
+      "/assets/img/3.jpg"
+    ]
+  },
+  {
+    "id": "1",
+    "title": "BMV",
+    "img": "/assets/img/3.jpg",
+    "photos": [
+      "/assets/img/1.jpg",
+      "/assets/img/2.jpg",
+      "/assets/img/3.jpg"
+    ],
+    "text": "Спецификация работ по Bentley Continental GT:"
+  },
+  {
+    "id": "1",
+    "title": "BMV",
+    "img": "/assets/img/4.jpg",
+    "photos": [
+      "/assets/img/1.jpg",
+      "/assets/img/2.jpg",
+      "/assets/img/3.jpg"
+    ]
+  },
+  {
+    "id": "1",
+    "title": "BMV",
+    "img": "/assets/img/1.jpg",
+    "photos": [
+      "/assets/img/1.jpg",
+      "/assets/img/2.jpg",
+      "/assets/img/3.jpg"
+    ]
+  },
+  {
+    "id": "1",
+    "title": "BMV",
+    "img": "/assets/img/2.jpg",
+    "photos": [
+      "/assets/img/1.jpg",
+      "/assets/img/2.jpg",
+      "/assets/img/3.jpg"
+    ],
+    "text": "Подобные новые автомобили нередко приезжают на полное оклеивание кузова антигравийной пленкой."
+  },
+  {
+    "id": "2",
+    "title": "audi",
+    "img": "/assets/img/3.jpg",
+    "photos": [
+      "/assets/img/5.jpg",
+      "/assets/img/6.jpg",
+      "/assets/img/7.jpg"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+<div class="first">
+  <img src="/assets/img/one.jpg" alt="" width=100%>
+</div>
+
+
+<!--<div [ngClass]="{'layer':true, 'animate': true, 'layer-active': isActive }"></div>-->
+<div class="" *ngFor="let item of content; let i=index">
+  <div #dot class="{{ 'dot'+ (i + 1) }} dot animate"
+   [ngClass]="{'dot-bottom': isActive, 'dot-active': dotActive===dot }"
+    (click)="downDot(true, slide, dot)">
+  </div>
+  
+  <div #slide        
+        class="wrapper"
+        (click)="downDot(false)">
+    <div *ngFor="let k of item.text"
+         class="text" 
+         [style.backgroundImage]="item.bg">
+      
+      <div class="sign" [style.top]="k.top" [style.left]="k.left">{{ k.string }}</div>
+
+      <!--<div class="second__text"> {{ k.string }} </div>-->
+
+    </div>
+
+    <!--<div class="img">
+            <img src="{{ item.img }}" alt="" width=100%>
+        </div>-->
+  </div>
+
+</div>

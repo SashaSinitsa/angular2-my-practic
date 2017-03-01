@@ -1,0 +1,83 @@
+:host {
+  display: block;
+
+  padding: 0;
+}
+
+main {
+  position: relative;
+  /*display: flex;
+  flex-direction: row;*/
+  /*align-items: center;*/
+  
+}
+
+
+section {
+  padding-bottom: 0;
+}
+
+input {
+  width: 250px;
+}
+
+ul {
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+img {
+  display: block;
+
+  width: 100%;
+}
+
+.scroll-left,
+.scroll-right {
+  position: relative;
+  float: left;
+  z-index: 551;
+  /*height: 100%;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+}
+
+.carusel {
+  width: 9999px;
+}
+
+/*.carusel>div {
+  width: 50vw;
+}*/
+
+.carusel .scroll-left:hover {
+  cursor: w-resize;
+}
+
+.carusel .scroll-right:hover {
+  cursor: e-resize;
+}
+
+.personal-block {
+  margin: 10px;
+  text-align: center;
+}
+
+ .btn-scroll-l, .btn-scroll-r {
+  width: 5vw;
+  height: 7vw;
+  background: url(/assets/img/btn-r-l.png) no-repeat;
+  position: absolute;
+  background-size: 200% 100%;
+  z-index: 552;
+  top: 40%;
+  }
+
+.btn-scroll-r {
+  background-position-x: 100%;
+  right: 0;
+}
+
+

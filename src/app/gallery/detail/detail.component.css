@@ -1,0 +1,34 @@
+.wrapper-detail {
+    padding: 0 25px 40px 25px;
+}
+
+.wrapper-photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*margin-bottom: 40px;*/
+}
+
+.detail-title {
+    margin: 20px;
+    padding: 0;
+
+    text-align: left;
+
+    color: var(--dark);
+
+    font-weight: bold;
+}
+
+.detail-img {
+    display: block;
+
+    width: 250px;
+    height: 187px;
+    margin: 20px;
+}
+
+.detail-text {
+    margin: 20px;
+}

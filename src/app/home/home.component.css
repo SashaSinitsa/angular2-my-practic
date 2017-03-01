@@ -1,0 +1,16 @@
+:host {
+  position: relative;
+  top: -70px;
+
+  display: block;
+
+  padding: 0;
+
+  background-color: var(--body-background);
+}
+
+#home {
+  min-height: 100vh;
+
+  background-size: cover;
+}

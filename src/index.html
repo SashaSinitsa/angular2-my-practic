@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+  <% if (webpackConfig.htmlElements.headTags) { %>
+    <!-- Configured Head Tags  -->
+    <%= webpackConfig.htmlElements.headTags %>
+      <% } %>
+        <!-- base url -->
+        <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
+
+
+
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+
+
+
+</head>
+
+<body>
+  <app>
+    Loading...
+  </app>
+  <!-- Google Analytics: change UA-71073175-1 to be your site's ID -->
+  <script>
+    (function (A, n, g, u, l, a, r) {
+      A.GoogleAnalyticsObject = r;
+      A[l] = A[l] || function () {
+        (A[l].q = A[l].q || []).push(arguments)
+      }, A[l].l = 1 * new Date();
+      a = n.createElement(g),
+        r = n.getElementsByTagName(g)[0];
+      a.async = 1;
+      a.src = u;
+      r.parentNode.insertBefore(a, r)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-71073175-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
+    <!-- Webpack Dev Server reload -->
+    <script src="/webpack-dev-server.js"></script>
+    <% } %>
+
+      <!--<script>
+        // The following example creates a marker in Stockholm, Sweden using a DROP
+        // animation. Clicking on the marker will toggle the animation between a BOUNCE
+        // animation and no animation.
+        var marker;
+
+        function initMap() {
+          setTimeout(function () {
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 14,
+              scrollwheel: false,
+              center: {
+                lat: 49.9805674,
+                lng: 36.2449371
+              }
+            });
+
+            marker = new google.maps.Marker({
+              map: map,
+              draggable: true,
+              animation: google.maps.Animation.DROP,
+              position: {
+                lat: 49.9805674,
+                lng: 36.2449371
+              }
+            });
+            marker.addListener('click', toggleBounce);
+          }, 3000)
+        }
+
+        function toggleBounce() {
+          if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+          } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }
+
+      </script>-->
+
+      <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6wZP0eGbMyO1QgHaxkPmfVIOO1rF9aFY&signed_in=true&callback=initMap"></script>-->
+
+
+
+
+
+      <!--<script type="text/javascript">
+        setTimeout(function () {
+          if (window.pluso)
+            if (typeof window.pluso.start == "function") return;
+          if (window.ifpluso == undefined) {
+            window.ifpluso = 1;
+            var d = document,
+              s = d.createElement('script'),
+              g = 'getElementsByTagName';
+            s.type = 'text/javascript';
+            s.charset = 'UTF-8';
+            s.async = true;
+            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+            var h = d[g]('body')[0];
+            h.appendChild(s);
+          }
+        }, 3000);
+      </script>
+
+      <div class="pluso pull-right" style="padding: 20px; margin-top: -230px;" data-background="transparent" data-options="medium,square,line,vertical,nocounter,theme=04"
+        data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div>-->
+</body>
+
+</html>

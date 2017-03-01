@@ -1,0 +1,28 @@
+.wrapper-breadcrumb {
+    margin: 40px 20px 10px 20px;
+    padding: 0 25px;
+}
+
+.wrapper-breadcrumb a {
+    color: var(--linc-color);
+}   
+
+.wrapper-breadcrumb .slash {
+    color: var(--dark);
+    margin: 0 5px;
+}
+
+/*.wrapper-breadcrumb :last-child :only-of-type {*/
+.wrapper-breadcrumb>:last-child a  {
+    text-decoration: none;
+    color: var(--dark);
+    cursor: default;
+} 
+
+.wrapper-breadcrumb>:last-child i {
+display: none;
+}
+  
+.breadcrumb {
+    display: inline-block;
+}

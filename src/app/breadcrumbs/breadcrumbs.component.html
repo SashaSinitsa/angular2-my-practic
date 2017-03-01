@@ -1,0 +1,7 @@
+    <div class="wrapper-breadcrumb">
+      <div class="breadcrumb"><a routerLink="">Главная</a><i class="slash"> /</i></div>
+      <div class="breadcrumb" *ngFor="let breadcrumb of breadcrumbs">
+        <a [routerLink]="[breadcrumb.url, breadcrumb.params]">{{ breadcrumb.label }}
+        </a><i class="slash"> /</i>
+      </div>
+    </div>

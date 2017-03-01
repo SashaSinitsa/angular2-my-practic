@@ -1,0 +1,119 @@
+:host {
+  display: block;
+}
+
+section {
+  padding-bottom: 0;
+}
+
+.contacts {
+  padding-top: 30px;
+}
+
+.contacts-block {
+  /*position: relative;*/
+  display: flex;
+  flex-direction: row;
+
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.personal-block {
+  margin: 10px;
+
+  text-align: center;
+}
+
+.personal-block h3 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.personal-block p {
+  margin: 0;
+
+  color: #87857D;
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.contacts h1 {
+  padding: 0;
+  padding-bottom: 30px;
+
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.name,
+.mail,
+.textarea {
+  padding: 0 10px 10px 10px;
+
+  border: none;
+}
+
+.name:focus,
+.mail:focus {
+  outline: none;
+}
+
+.wrap {
+  width: 48%;
+
+  text-align: left;
+
+  border-bottom: 2px solid black;
+}
+
+.text {
+  padding-top: 20px;
+
+  border-bottom: 2px solid black;
+}
+
+input {
+  background-color: var(--body-background);
+}
+
+.textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--body-background);
+}
+
+.button-message {
+  display: block;
+
+  width: 100px;
+  height: 30px;
+  margin: auto;
+}
+
+.submit {
+  padding-top: 20px;
+}
+
+sebm-google-map {
+  position: relative;
+  top: 70px;
+
+  display: block;
+
+  margin-top: -70px;
+}
+
+.sebm-google-map-container {
+  /*position: relative;*/
+  /*top: 70px;*/
+  height: 500px;
+}

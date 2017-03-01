@@ -1,0 +1,51 @@
+
+<nav class="nav" (selectstart)="preventDefault()">
+
+    <div #activeMenu (window:resize)="resize()" class="active-menu">
+        <div class="active-item">
+            <div class="back-menu">
+        
+                <div class="menu">
+                    <div #link
+                        class="item"
+                        *ngFor="let item of data; let i=index"
+                        [style.width]="widthItem + 'px'">
+
+                        <img src=" {{ item.imgAct }} " alt="crown" width="30%" height="30%">
+                        <br>
+                        <div class="item-name">
+                        {{ item.name }}
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="active-menu-top"></div>
+    </div>
+
+    <div class="front-menu">
+        <div #menu class="menu">
+            <div #link
+                class="item"
+                *ngFor="let item of data; let i=index" 
+                [style.width]="widthItem + 'px'"          
+                [class.active]="link===active"
+                (click)='changeContent(link, i)'>
+
+                <img src=" {{ item.img }} " alt="crown" width="30%" height="30%">
+                <br>
+                <!--<div class="item-name">-->
+                {{ item.name }}
+                <!--</div>-->
+            </div>
+        </div>
+    </div>    
+</nav>
+
+
+<main *ngIf="isExtend">
+    <section> 
+        <h2> {{ data[iItem].text }} </h2>
+        <a  [routerLink]="['../'+ data[iItem].href, {id: iItem}]" class="btn btn-big btn-primary"> {{ data[iItem].button }} </a>
+    </section>    
+</main>

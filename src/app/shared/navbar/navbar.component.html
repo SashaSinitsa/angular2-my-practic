@@ -1,0 +1,14 @@
+<!--window:scroll ??? -->
+<nav [ngClass]="{ 'menu-back_shrink': menuBackShrink }" (window:scroll)='handler()' class="animate menu-back">
+  <a [routerLink]="['/']" (click)="goTo()"> Главная </a>
+  <!--<a [routerLink]="['/']" (click)="goTo('catalogue')"> Галерея </a>-->
+  <a [routerLink]="['/gallery']"> Галерея </a>
+
+  <a [routerLink]="['/']" (click)="goTo('prices')"> Цены </a>
+  <a [routerLink]="['/']" (click)="goTo('reviews')"> Отзывы </a>
+  <a [routerLink]="['/']" (click)="goTo('about')"> О компании </a>
+  <a [routerLink]="['/']" (click)="goTo('contacts')"> Контакты </a>
+  
+
+  <!--<a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">ABOUT</a>-->
+</nav>

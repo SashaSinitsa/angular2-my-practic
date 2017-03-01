@@ -1,0 +1,31 @@
+<section (window:resize)="resize()" class="clearfix">
+  <header>
+    <h1>Наши работы</h1>
+  </header>
+  <ng-content></ng-content>
+
+  <main class="clearfix">
+    <ul class="anchor-catalogue">
+      <div class="catalog-unit">
+        <div class="carusel " (click)='scrolling($event, carusel1)' #carusel1>
+          <div class="scroll-left clearfix" [style.width]="widthWindow05">
+            <img src="/assets/img/1.jpg" alt=""></div>
+          <div class="scroll-right clearfix" [style.width]="widthWindow05">
+            <img src="/assets/img/2.jpg" alt=""></div>
+          <div class="scroll-left clearfix" [style.width]="widthWindow05">
+            <img src="/assets/img/3.jpg" alt=""></div>
+          <div class="scroll-right clearfix" [style.width]="widthWindow05">
+            <img src="/assets/img/4.jpg" alt=""></div>
+        </div>
+      </div>
+    </ul>
+    <div class="btn-scroll-r"></div>
+    <div class="btn-scroll-l"></div>
+  </main>
+
+  <div class="personal-block">
+    <a class="btn btn-big btn-primary"
+      href="/#/gallery">все работы</a>
+    
+  </div>
+  <section>

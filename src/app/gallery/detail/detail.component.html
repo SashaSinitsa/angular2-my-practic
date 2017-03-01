@@ -1,0 +1,13 @@
+<div *ngIf="itemObj" class="wrapper-detail">
+  <h1 class="detail-title"> {{ itemObj.title }}</h1>
+  <div class="wrapper-photos">
+    <div class="detail-photo" *ngFor="let item of photos">
+      <img class="detail-img" src="{{ item }}" alt="">
+    </div>
+  </div>
+  <p class="detail-text">{{ itemObj.text }}</p>
+</div>
+<!--slider-->
+
+<sliderSwiper *ngIf="showedSlider"></sliderSwiper>
+

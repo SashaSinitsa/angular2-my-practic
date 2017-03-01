@@ -1,0 +1,8 @@
+{
+  "css": {
+    "style": [
+      "src/styles/bootstrap.css",
+      "src/styles/headings.css"
+    ]
+  }
+}
